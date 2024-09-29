@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Font Test</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1 class="protest-guerrilla-regular">
+      hello world <br />
+      name is meniem
+    </h1>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js with Vanilla JS</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+  <button id="dos"  onclick="bdanny()">dos kda</button>
+  <button id="resume"  >dos tany kda</button>
+  <button id="dosa"   >dos kda</button>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+          <script src="x.js"></script>
+          <script>
+            let animateId
+           
+            document.getElementById('dosa').addEventListener("click", () => {console.log('some clickyyy');})
+            document.getElementById("resume").addEventListener("click", animate)
+            function animate() {
+           animateId = requestAnimationFrame(animate);
+
+        // Rotate the cube
+        cube.rotation.x += 0.001;
+        cube.rotation.y += 0.01;
+
+        // Render the scene
+        renderer.render(scene, camera);
+      }
+
+      function bdanny() {
+        setTimeout(() => {
+          cancelAnimationFrame(animateId);
+        }, 100);
+      }
+          </script>
+</body>
+</html>
